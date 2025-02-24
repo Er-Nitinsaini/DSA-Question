@@ -1,3 +1,197 @@
+
+# Java Array Interview Questions and Answers
+
+## 1. What is an array in Java?
+
+An array in Java is a collection of elements of the same data type stored in contiguous memory locations. It is a fixed-size data structure.
+
+```java
+int[] numbers = new int[5];
+```
+
+---
+
+## 2. How do you declare an array in Java?
+
+```java
+int[] arr; // Preferred way
+int arr[]; // Also valid
+```
+
+---
+
+## 3. How do you initialize an array in Java?
+
+```java
+int[] arr = {1, 2, 3, 4, 5};
+```
+
+---
+
+## 4. What is the default value of an array element in Java?
+
+- **Numeric types** (int, double, float, etc.): `0`
+- **Boolean**: `false`
+- **Object references**: `null`
+
+---
+
+## 5. How do you determine the length of an array?
+
+```java
+int[] arr = {1, 2, 3};
+System.out.println(arr.length); // Output: 3
+```
+
+---
+
+## 6. Can you change the size of an array once it is created?
+
+No, arrays have a fixed size. You need to create a new array and copy elements if resizing is needed.
+
+---
+
+## 7. How do you access elements in an array?
+
+```java
+int[] arr = {10, 20, 30};
+System.out.println(arr[1]); // Output: 20
+```
+
+---
+
+## 8. What happens if you access an index outside the array bounds?
+
+It throws an `ArrayIndexOutOfBoundsException`.
+
+```java
+int[] arr = {1, 2, 3};
+System.out.println(arr[5]); // Throws ArrayIndexOutOfBoundsException
+```
+
+---
+
+## 9. How do you iterate over an array in Java?
+
+### Using a for loop:
+
+```java
+for (int i = 0; i < arr.length; i++) {
+    System.out.println(arr[i]);
+}
+```
+
+### Using an enhanced for loop:
+
+```java
+for (int num : arr) {
+    System.out.println(num);
+}
+```
+
+---
+
+## 10. What are different ways to loop through an array?
+
+- `for` loop
+- `enhanced for` loop
+- `while` loop
+- `Streams API (Java 8+)`
+
+---
+
+## 11. What is a multi-dimensional array?
+
+An array containing multiple arrays, like a matrix.
+
+```java
+int[][] matrix = {{1, 2}, {3, 4}};
+```
+
+---
+
+## 12. How do you declare and initialize a 2D array?
+
+```java
+int[][] arr = new int[2][3];
+int[][] arr2 = {{1, 2, 3}, {4, 5, 6}};
+```
+
+---
+
+## 13. How do you access elements in a 2D array?
+
+```java
+System.out.println(arr[0][1]); // Access row 0, column 1
+```
+
+---
+
+## 14. Can you have a non-rectangular 2D array?
+
+Yes, it's called a **jagged array**.
+
+```java
+int[][] jagged = new int[2][];
+jagged[0] = new int[3];
+jagged[1] = new int[5];
+```
+
+---
+
+## 15. How do you sort an array in Java?
+
+### Using Arrays.sort()
+
+```java
+int[] arr = {5, 3, 8, 1};
+Arrays.sort(arr);
+```
+
+---
+
+## 16. How do you reverse an array?
+
+```java
+Collections.reverse(Arrays.asList(arr));
+```
+
+---
+
+## 17. How do you find the maximum element in an array?
+
+```java
+int max = Arrays.stream(arr).max().getAsInt();
+```
+
+---
+
+## 18. How do you merge two arrays?
+
+```java
+int[] merged = Stream.concat(Arrays.stream(arr1), Arrays.stream(arr2)).toArray();
+```
+
+---
+
+## 19. How do you remove duplicates from an array?
+
+```java
+int[] unique = Arrays.stream(arr).distinct().toArray();
+```
+
+---
+
+## 20. How do you convert an array to an ArrayList?
+
+```java
+List<Integer> list = Arrays.asList(arr);
+```
+
+---
+
+
+
 # DSA Question on Array
 
 

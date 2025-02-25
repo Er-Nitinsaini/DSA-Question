@@ -210,3 +210,7 @@ List<Integer> list = Arrays.asList(arr);
 12. [Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/)
 13. [Flipping an Image](https://leetcode.com/problems/flipping-an-image/)
 14. [Cells with Odd Values in a Matrix](https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/)
+15. [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)
+16. - [Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/)
+17. [Assign Cookies](https://leetcode.com/problems/assign-cookies/)
+18. [Missing Number](https://leetcode.com/problems/missing-number/)
